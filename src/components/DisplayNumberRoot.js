@@ -1,4 +1,4 @@
-import DisplayNumber from "../containers/DisplayNumber";
+import DisplayNumber from "../components/DisplayNumber";
 
 const DisplayNumberRoot = () => {
   return (

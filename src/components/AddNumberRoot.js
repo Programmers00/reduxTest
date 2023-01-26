@@ -1,4 +1,4 @@
-import AddNumber from "../containers/AddNumber";
+import AddNumber from "../components/AddNumber";
 
 const AddNumberRoot = () => {
   return (

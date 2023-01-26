@@ -1,11 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
-import { Provider } from "react-redux";
-import store from "./store/store";
+// store for redux stuff
+import store, { Provider } from "./store";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
+  // wrapped whole App by Provider(redux)
   <Provider store={store}>
     <App />
   </Provider>
