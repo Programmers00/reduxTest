@@ -3,7 +3,6 @@ import { connect } from "react-redux";
 const mapReduxDispatchToReactProps = (dispatch) => {
   return {
     onClick: (size) => {
-      console.log("##SIZE222", size);
       dispatch({ type: "INCREMENT", size: size });
     },
   };
