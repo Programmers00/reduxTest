@@ -1,6 +1,17 @@
 import AddNumber from "../components/AddNumber";
-import store from "../store/store";
+import { connect } from "react-redux";
+const mapReduxDispatchToReactProps = (dispatch) => {
+  return {
+    onClick: (size) => {
+      console.log("##SIZE222", size);
+      dispatch({ type: "INCREMENT", size: size });
+    },
+  };
+};
+export default connect(null, mapReduxDispatchToReactProps)(AddNumber);
 
+/*
+import store from "../store/store";
 export default () => {
   return (
     <>
@@ -12,3 +23,4 @@ export default () => {
     </>
   );
 };
+*/
