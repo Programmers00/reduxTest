@@ -2,7 +2,8 @@
 import { useSelector } from "react-redux";
 
 const DisplayNumber = () => {
-  const number = useSelector((state) => state.number);
+  // when using a combineReducers, there is
+  const number = useSelector((state) => state.handleNumberReducer.number);
   return (
     <div style={{ border: "2px solid blue", padding: "10px" }}>
       <h1>DisplayNumber</h1>
